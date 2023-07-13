@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/handbookFragment"
+        android:icon="@drawable/baseline_auto_stories_24"
+        android:title="Handbook" />
+    <item
+        android:id="@+id/tellFortunesFragment"
+        android:icon="@drawable/baseline_auto_awesome_24"
+        android:title="Tell Fortune" />
+    <item
+        android:id="@+id/optionFragment"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings" />
+</menu>

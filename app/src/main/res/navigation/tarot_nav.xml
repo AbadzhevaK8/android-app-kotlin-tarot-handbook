@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tarot_nav"
+    app:startDestination="@id/handbookFragment">
+
+    <fragment
+        android:id="@+id/handbookFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.HandbookFragment"
+        android:label="fragment_handbook"
+        tools:layout="@layout/fragment_handbook" />
+    <fragment
+        android:id="@+id/tellFortunesFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.TellFortunesFragment"
+        android:label="fragment_tell_fortunes"
+        tools:layout="@layout/fragment_tell_fortunes" />
+    <fragment
+        android:id="@+id/optionFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.OptionFragment"
+        android:label="fragment_option"
+        tools:layout="@layout/fragment_option" />
+</navigation>
