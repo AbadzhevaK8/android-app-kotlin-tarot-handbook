@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tarot_nav"
-    app:startDestination="@id/handbookFragment">
+    app:startDestination="@id/HandbookFragment">
 
     <fragment
-        android:id="@+id/handbookFragment"
-        android:name="com.k8abadzheva.tarothandbook.ui.HandbookFragment"
-        android:label="fragment_handbook"
-        tools:layout="@layout/fragment_handbook" />
+        android:id="@+id/HandbookFragment"
+        android:name="com.k8abadzheva.tarothandbook.HandbookFragment"
+        android:label="@string/fragment_handbook_label"
+        tools:layout="@layout/fragment_handbook" >
+        <action
+            android:id="@+id/action_HandbookFragment_to_CardFragment"
+            app:destination="@id/CardFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/tellFortunesFragment"
-        android:name="com.k8abadzheva.tarothandbook.ui.TellFortunesFragment"
-        android:label="fragment_tell_fortunes"
-        tools:layout="@layout/fragment_tell_fortunes" />
+        android:id="@+id/TellFortunesFragment"
+        android:name="com.k8abadzheva.tarothandbook.TellFortunesFragment"
+        android:label="@string/fragment_tell_label"
+        tools:layout="@layout/fragment_tell_fortunes" >
+        <action
+            android:id="@+id/action_tellFortunesFragment_to_cardFragment"
+            app:destination="@id/CardFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/optionFragment"
-        android:name="com.k8abadzheva.tarothandbook.ui.OptionFragment"
-        android:label="fragment_option"
+        android:id="@+id/OptionFragment"
+        android:name="com.k8abadzheva.tarothandbook.OptionFragment"
+        android:label="@string/fragment_options_label"
         tools:layout="@layout/fragment_option" />
+    <fragment
+        android:id="@+id/CardFragment"
+        android:name="com.k8abadzheva.tarothandbook.CardFragment"
+        tools:layout="@layout/fragment_card" />
 </navigation>

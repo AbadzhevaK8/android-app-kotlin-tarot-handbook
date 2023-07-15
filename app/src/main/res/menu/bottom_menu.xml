@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/handbookFragment"
+        android:id="@+id/HandbookFragment"
         android:icon="@drawable/baseline_auto_stories_24"
         android:title="Handbook" />
     <item
-        android:id="@+id/tellFortunesFragment"
+        android:id="@+id/TellFortunesFragment"
         android:icon="@drawable/baseline_auto_awesome_24"
         android:title="Tell Fortune" />
     <item
-        android:id="@+id/optionFragment"
+        android:id="@+id/OptionFragment"
         android:icon="@drawable/baseline_settings_24"
         android:title="Settings" />
 </menu>

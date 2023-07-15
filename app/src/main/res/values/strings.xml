@@ -1,5 +1,8 @@
 <resources>
     <string name="title_placeholder">Title</string>
+    <string name="fragment_handbook_label">Handbook</string>
+    <string name="fragment_tell_label">Tell Fortunes</string>
+    <string name="fragment_options_label">Options</string>
     <string name="app_name">Tarot Handbook</string>
     <string name="title_fool">The Fool</string>
     <string name="interpretation_fool">Without the notion of Zero, our system of mathematics

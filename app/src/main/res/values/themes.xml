@@ -31,4 +31,10 @@
     </style>
 
     <style name="Theme.TarotHandbook" parent="Base.Theme.TarotHandbook" />
+    <style name="Theme.TarotHandbook.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+    <style name="App.Custom.Indicator"
+        parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?attr/colorPrimaryContainer</item>
+    </style>
+    <style name="Theme.TarotHandbook.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 </resources>
