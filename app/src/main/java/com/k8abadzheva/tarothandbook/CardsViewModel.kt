@@ -23,4 +23,9 @@ class CardsViewModel : ViewModel() {
     fun updateCurrentCard(card: Card) {
         _currentCard.value = card
     }
+
+    fun getRandomCard() {
+        val randomCard = (0..5).random()
+        _currentCard.value = _cardsData[randomCard]
+    }
 }

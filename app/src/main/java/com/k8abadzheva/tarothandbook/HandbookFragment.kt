@@ -27,7 +27,7 @@ class HandbookFragment : Fragment() {
 
         val adapter = CardsAdapter {
             cardsViewModel.updateCurrentCard(it)
-                this.findNavController().navigate(R.id.action_HandbookFragment_to_CardFragment)
+            this.findNavController().navigate(R.id.action_HandbookFragment_to_CardFragment)
         }
         binding.recyclerView.adapter = adapter
         adapter.submitList(cardsViewModel.cardsData)

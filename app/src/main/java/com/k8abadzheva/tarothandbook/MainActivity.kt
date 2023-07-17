@@ -19,8 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         val navController = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)?.findNavController()
@@ -30,6 +29,24 @@ class MainActivity : AppCompatActivity() {
             appBarConfiguration = AppBarConfiguration(navController.graph)
         }
         navController?.let { binding.toolbar.setupWithNavController(it, appBarConfiguration) }
+
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.HandbookFragment -> {
+                    navController?.navigate(R.id.HandbookFragment)
+                    true
+                }
+                R.id.TellFortunesFragment -> {
+                    navController?.navigate(R.id.TellFortunesFragment)
+                    true
+                }
+                R.id.OptionFragment -> {
+                    navController?.navigate(R.id.OptionFragment)
+                    true
+                }
+                else -> false
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
