@@ -1,4 +1,4 @@
-package com.k8abadzheva.tarothandbook
+package com.k8abadzheva.tarothandbook.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import coil.load
+import com.k8abadzheva.tarothandbook.CardsViewModel
 import com.k8abadzheva.tarothandbook.databinding.FragmentCardBinding
 
 

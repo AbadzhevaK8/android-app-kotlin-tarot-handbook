@@ -6,6 +6,7 @@
     <string name="fragment_tell_label">Tell fortunes</string>
     <string name="fragment_options_label">Options</string>
     <string name="tell_fortune_btn_text">Tell fortunes</string>
+    <string name="back">Back</string>
 <!--    Arcanum -->
     <string name="major">Major arcanum</string>
     <string name="cups">Cups</string>
