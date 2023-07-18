@@ -25,7 +25,7 @@ class CardsViewModel : ViewModel() {
     }
 
     fun getRandomCard() {
-        val randomCard = (0..5).random()
+        val randomCard = (0..77).random()
         _currentCard.value = _cardsData[randomCard]
     }
 }
