@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/HandbookFragment"
-        android:name="com.k8abadzheva.tarothandbook.HandbookFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.HandbookFragment"
         android:label="@string/fragment_handbook_label"
         tools:layout="@layout/fragment_handbook" >
         <action
@@ -17,20 +17,21 @@
     </fragment>
     <fragment
         android:id="@+id/TellFortunesFragment"
-        android:name="com.k8abadzheva.tarothandbook.TellFortunesFragment"
-        android:label="@string/fragment_tell_label"
-        tools:layout="@layout/fragment_tell_fortunes" >
+        android:name="com.k8abadzheva.tarothandbook.ui.TellFortunesFragment"
+        android:label="@string/back"
+        tools:layout="@layout/fragment_tell_fortunes">
         <action
             android:id="@+id/action_tellFortunesFragment_to_cardFragment"
             app:destination="@id/CardFragment" />
     </fragment>
     <fragment
         android:id="@+id/OptionFragment"
-        android:name="com.k8abadzheva.tarothandbook.OptionFragment"
-        android:label="@string/fragment_options_label"
+        android:name="com.k8abadzheva.tarothandbook.ui.OptionFragment"
+        android:label="@string/back"
         tools:layout="@layout/fragment_option" />
     <fragment
         android:id="@+id/CardFragment"
-        android:name="com.k8abadzheva.tarothandbook.CardFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.CardFragment"
+        android:label="@string/back"
         tools:layout="@layout/fragment_card" />
 </navigation>

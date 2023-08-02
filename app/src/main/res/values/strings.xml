@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">Tarot Handbook</string>
-<!--    Layout string resources. -->
+    <!--    Layout string resources. -->
     <string name="title_placeholder">Title</string>
     <string name="fragment_handbook_label">Handbook</string>
     <string name="fragment_tell_label">Tell fortunes</string>
-    <string name="fragment_options_label">Options</string>
     <string name="tell_fortune_btn_text">Tell fortunes</string>
+    <string name="back">Back</string>
 <!--    Arcanum -->
     <string name="major">Major arcanum</string>
     <string name="cups">Cups</string>
@@ -553,4 +552,7 @@
         is not in dreaming up ideas and implementing them himself, but in taking an idea and
         changing the world to match his vision. As such he is a natural leader and commander of
         all kinds of people. They flock to him to hear what he has to say and leave just as eagerly when he gives them something to do for him. Like the rest of the Kings, the ruler of the Wands suit will appear in two ways in your life: either as a person or as a part of yourself that must be awakened.\n\nAs a person, the King of Wands is the ultimate leader, who looks forward to challenges because he enjoys the rush of adrenalin that solving a difficult problem can induce. He not only dispels his own fear but that of others, by ensuring them that they shall succeed. He is not all talk, though; when the going gets tough no one hangs in there longer than he does. The King of Wands has a deep and innate respect for other people, and his compassion extends farther than most people would expect. For a King, he has a remarkably good relationship with the common people. When he is unable to assist by himself, he will empower and enable others to help in his place.\n\nAs with all of us, the King\'s faults emerge from his strengths. Most of the time he does not show enough restraint to know when assistance is not needed or wanted. He can sometimes make things even worse by doing what he thinks is the right thing - and he always thinks that what he is doing is the right thing. Most of the time his high sense of ethics proves him right, but in those few times where he is on the wrong side of the argument, he can do more harm than good. But one thing that can never be said of him is that he walks away from problems, whatever they are. He will defend another man just as vigilantly, if not more so, than he would protect himself.\n\nAn inner spiritual change is often heralded when this card appears. The King of Wands invites us to act as he would to solve our problems. His vision is one of ideal reality, and his vision is that humanity might always be better than it is. He is the warrior of light who stands up for something that matters, and his appearance is an invitation for you to do so as well. If there is a cause you wish to support, but you are unsure of your position, you may proceed with the knowledge that your base of power is strong. Enjoy the King\'s power and authority, but be sure to use it for productive means. Take your responsibilities seriously, think of new ways to do things, and never stop believing in yourself.</string>
+    <string name="share_btn">Share</string>
+    <string name="app_name">Tarot Handbook</string>
+    <string name="fragment_options_label">About</string>
 </resources>

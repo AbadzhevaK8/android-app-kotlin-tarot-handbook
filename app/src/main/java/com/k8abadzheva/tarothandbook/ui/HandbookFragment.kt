@@ -1,4 +1,4 @@
-package com.k8abadzheva.tarothandbook
+package com.k8abadzheva.tarothandbook.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,17 +7,19 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.k8abadzheva.tarothandbook.CardsViewModel
+import com.k8abadzheva.tarothandbook.R
 import com.k8abadzheva.tarothandbook.databinding.FragmentHandbookBinding
 
 class HandbookFragment : Fragment() {
 
     private val cardsViewModel: CardsViewModel by activityViewModels()
+    private lateinit var adapter: CardsAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return FragmentHandbookBinding.inflate(inflater, container, false).root
     }
 
@@ -25,11 +27,12 @@ class HandbookFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val binding = FragmentHandbookBinding.bind(view)
 
-        val adapter = CardsAdapter {
-            cardsViewModel.updateCurrentCard(it)
+        adapter = CardsAdapter { card ->
+            cardsViewModel.updateCurrentCard(card)
             this.findNavController().navigate(R.id.action_HandbookFragment_to_CardFragment)
         }
         binding.recyclerView.adapter = adapter
-        adapter.submitList(cardsViewModel.cardsData)
+        adapter.setData(requireContext(), cardsViewModel.cardsData)
     }
 }
+
