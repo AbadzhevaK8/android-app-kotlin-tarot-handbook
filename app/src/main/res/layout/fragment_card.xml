@@ -16,14 +16,14 @@
 
         <ImageView
             android:id="@+id/cardImage"
-            android:layout_width="150dp"
+            android:layout_width="197dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:contentDescription="@null"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/rwmagician" />
+            tools:srcCompat="@drawable/rw_empress" />
 
         <TextView
             android:id="@+id/cardTitle"

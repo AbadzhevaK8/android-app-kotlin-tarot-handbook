@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/title"
-            style="@android:style/TextAppearance.Material.Headline"
+            style="@android:style/TextAppearance.Material.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
