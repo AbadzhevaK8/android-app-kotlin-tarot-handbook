@@ -1,13 +1,13 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/SettingsFragment"
         android:icon="@drawable/baseline_settings_24"
         android:title="@string/settings"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_about"
+        android:id="@+id/AboutFragment"
         android:icon="@drawable/baseline_help_outline_24"
         android:title="@string/fragment_options_label"
         app:showAsAction="ifRoom" />

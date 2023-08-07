@@ -2,7 +2,6 @@ package com.k8abadzheva.tarothandbook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.findNavController
@@ -44,15 +43,9 @@ class MainActivity : AppCompatActivity() {
                     navController?.navigate(R.id.TellFortunesFragment)
                     true
                 }
-//                R.id.OptionFragment -> {
-//                    navController?.navigate(R.id.OptionFragment)
-//                    true
-//                }
                 else -> false
             }
         }
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -61,15 +54,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val navController = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)?.findNavController()
+
         when (item.itemId) {
-            R.id.action_settings -> {
-                //Log.d("ASAP", "action_settings IS CLICKED!!!")
-                // Добавьте код для обработки выбора Item 1
+            R.id.SettingsFragment -> {
+                navController?.navigate(R.id.SettingsFragment)
                 return true
             }
-            R.id.action_about -> {
-                //Log.d("ASAP", "action_about IS CLICKED!!!")
-                // Добавьте код для обработки выбора Item 2
+            R.id.AboutFragment -> {
+                navController?.navigate(R.id.AboutFragment)
                 return true
             }
             else -> return super.onOptionsItemSelected(item)
@@ -78,7 +71,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragmentContainerView)
-        //Log.d("ASAP", "onSupportNavigateUp IS CLICKED!!!")
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
