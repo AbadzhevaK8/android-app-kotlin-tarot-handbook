@@ -34,7 +34,7 @@
     <style name="Theme.TarotHandbook.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
     <style name="App.Custom.Indicator"
         parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">?attr/colorPrimaryContainer</item>
+        <item name="android:color">@color/md_theme_light_inversePrimary</item>
     </style>
     <style name="Theme.TarotHandbook.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 </resources>
