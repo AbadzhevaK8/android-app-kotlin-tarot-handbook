@@ -25,13 +25,18 @@
             app:destination="@id/CardFragment" />
     </fragment>
     <fragment
-        android:id="@+id/OptionFragment"
-        android:name="com.k8abadzheva.tarothandbook.ui.OptionFragment"
-        android:label="@string/back"
-        tools:layout="@layout/fragment_option" />
-    <fragment
         android:id="@+id/CardFragment"
         android:name="com.k8abadzheva.tarothandbook.ui.CardFragment"
         android:label="@string/back"
         tools:layout="@layout/fragment_card" />
+    <fragment
+        android:id="@+id/abooutFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.AbooutFragment"
+        android:label="fragment_aboout"
+        tools:layout="@layout/fragment_aboout" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

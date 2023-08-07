@@ -5,13 +5,13 @@
     <string name="fragment_tell_label">Tell fortunes</string>
     <string name="tell_fortune_btn_text">Tell fortunes</string>
     <string name="back">Back</string>
-<!--    Arcanum -->
+    <!--    Arcanum -->
     <string name="major">Major arcanum</string>
     <string name="cups">Cups</string>
     <string name="wands">Wands</string>
     <string name="swords">Swords</string>
     <string name="pentacles">Pentacles</string>
-<!--    Names and interpretations of cards.-->
+    <!--    Names and interpretations of cards.-->
     <string name="title_fool">The Fool</string>
     <string name="interpretation_fool">Without the notion of Zero, our system of mathematics
         becomes meaningless. Similarly, the Fool is an essential part of the Tarot because he is
@@ -555,4 +555,7 @@
     <string name="share_btn">Share</string>
     <string name="app_name">Tarot Handbook</string>
     <string name="fragment_options_label">About</string>
+    <string name="settings">Settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

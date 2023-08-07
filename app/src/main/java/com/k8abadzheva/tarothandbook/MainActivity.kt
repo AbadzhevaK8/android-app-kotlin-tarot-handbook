@@ -2,6 +2,9 @@ package com.k8abadzheva.tarothandbook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -19,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
         supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
@@ -40,17 +44,41 @@ class MainActivity : AppCompatActivity() {
                     navController?.navigate(R.id.TellFortunesFragment)
                     true
                 }
-                R.id.OptionFragment -> {
-                    navController?.navigate(R.id.OptionFragment)
-                    true
-                }
+//                R.id.OptionFragment -> {
+//                    navController?.navigate(R.id.OptionFragment)
+//                    true
+//                }
                 else -> false
             }
+        }
+
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.top_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_settings -> {
+                //Log.d("ASAP", "action_settings IS CLICKED!!!")
+                // Добавьте код для обработки выбора Item 1
+                return true
+            }
+            R.id.action_about -> {
+                //Log.d("ASAP", "action_about IS CLICKED!!!")
+                // Добавьте код для обработки выбора Item 2
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
         }
     }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragmentContainerView)
+        //Log.d("ASAP", "onSupportNavigateUp IS CLICKED!!!")
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }

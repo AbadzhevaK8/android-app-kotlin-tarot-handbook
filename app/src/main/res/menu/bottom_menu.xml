@@ -9,8 +9,4 @@
         android:id="@+id/TellFortunesFragment"
         android:icon="@drawable/baseline_auto_awesome_24"
         android:title="@string/fragment_tell_label" />
-    <item
-        android:id="@+id/OptionFragment"
-        android:icon="@drawable/baseline_settings_24"
-        android:title="@string/fragment_options_label" />
 </menu>
