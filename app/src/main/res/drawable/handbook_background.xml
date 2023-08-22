@@ -5,9 +5,9 @@
 
     <gradient
         android:angle="45"
-        android:endColor="@color/md_theme_light_primaryContainer"
-        android:centerColor="@color/md_theme_light_secondaryContainer"
-        android:startColor="@color/md_theme_light_tertiaryContainer"
+        android:endColor="?attr/colorPrimaryContainer"
+        android:centerColor="?attr/colorSecondaryContainer"
+        android:startColor="?attr/colorTertiaryContainer"
         android:type="linear" />
 
     <corners

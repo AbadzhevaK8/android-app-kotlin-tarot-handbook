@@ -30,13 +30,13 @@
         android:label="@string/back"
         tools:layout="@layout/fragment_card" />
     <fragment
-        android:id="@+id/abooutFragment"
-        android:name="com.k8abadzheva.tarothandbook.ui.AbooutFragment"
-        android:label="fragment_aboout"
-        tools:layout="@layout/fragment_aboout" />
+        android:id="@+id/AboutFragment"
+        android:name="com.k8abadzheva.tarothandbook.ui.AboutFragment"
+        android:label="@string/back"
+        tools:layout="@layout/fragment_about" />
     <fragment
-        android:id="@+id/settingsFragment"
+        android:id="@+id/SettingsFragment"
         android:name="com.k8abadzheva.tarothandbook.ui.SettingsFragment"
-        android:label="fragment_settings"
+        android:label="@string/back"
         tools:layout="@layout/fragment_settings" />
 </navigation>

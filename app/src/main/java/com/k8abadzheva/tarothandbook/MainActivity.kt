@@ -1,9 +1,11 @@
 package com.k8abadzheva.tarothandbook
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
@@ -21,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         setSupportActionBar(binding.toolbar)
         supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
 
@@ -56,16 +59,18 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val navController = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)?.findNavController()
 
-        when (item.itemId) {
+        return when (item.itemId) {
             R.id.SettingsFragment -> {
                 navController?.navigate(R.id.SettingsFragment)
-                return true
+                true
             }
+
             R.id.AboutFragment -> {
                 navController?.navigate(R.id.AboutFragment)
-                return true
+                true
             }
-            else -> return super.onOptionsItemSelected(item)
+
+            else -> super.onOptionsItemSelected(item)
         }
     }
 

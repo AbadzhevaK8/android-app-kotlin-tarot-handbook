@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="@string/title_placeholder"
-            android:textColor="?attr/actionModeSplitBackground"
+            android:textColor="?attr/colorPrimary"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardImage" />
 
@@ -63,7 +63,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardInterpretation"
-            app:strokeColor="@color/md_theme_light_primary"
+            app:strokeColor="?attr/colorPrimary"
             app:strokeWidth="1dp"
             tools:ignore="RtlHardcoded" />
 

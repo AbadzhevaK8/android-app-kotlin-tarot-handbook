@@ -22,9 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/tell_fortune_btn_text"
-        android:textColorLink="@color/md_theme_light_primary"
+        android:textColorLink="?attr/colorPrimary"
         android:textSize="16sp"
-        app:strokeColor="@color/md_theme_light_primary"
+        app:strokeColor="?attr/colorPrimary"
         app:strokeWidth="1dp" />
 
 </FrameLayout>
