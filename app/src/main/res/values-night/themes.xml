@@ -28,12 +28,13 @@
         <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
         <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
-        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:statusBarColor">?attr/colorSecondaryContainer</item>
+<!--        <item name="android:windowLightStatusBar">true</item>-->
         <item name="android:actionBarStyle">@style/ActionBarText</item>
     </style>
 
     <style name="ActionBarText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorSurface</item>
     </style>
     <style name="SpinnerTextStyle" parent="Widget.AppCompat.Spinner">
         <item name="android:textSize">16sp</item> <!-- Размер текста в спиннере -->

@@ -54,23 +54,7 @@
         android:minWidth="100dp"
         android:minHeight="48dp"
         android:prompt="@string/select_language"
-        app:layout_constraintBottom_toTopOf="@id/saveButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/themeSwitch" />
-
-    <Button
-        android:id="@+id/saveButton"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="@string/save"
-        android:textSize="16sp"
-        android:tint="?attr/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/languageSpinner"
-        app:strokeColor="?attr/colorPrimary"
-        app:strokeWidth="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

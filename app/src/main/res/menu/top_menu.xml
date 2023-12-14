@@ -3,7 +3,6 @@
     <item
         android:id="@+id/SettingsFragment"
         android:icon="@drawable/baseline_settings_24"
-        app:itemIconTint="?attr/colorPrimary"
         android:title="@string/settings"
         app:showAsAction="ifRoom" />
 
