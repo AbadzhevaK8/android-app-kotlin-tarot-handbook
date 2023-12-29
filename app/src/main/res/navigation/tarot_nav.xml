@@ -13,7 +13,11 @@
         tools:layout="@layout/fragment_handbook" >
         <action
             android:id="@+id/action_HandbookFragment_to_CardFragment"
-            app:destination="@id/CardFragment" />
+            app:destination="@id/CardFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/TellFortunesFragment"
@@ -22,7 +26,11 @@
         tools:layout="@layout/fragment_tell_fortunes">
         <action
             android:id="@+id/action_tellFortunesFragment_to_cardFragment"
-            app:destination="@id/CardFragment" />
+            app:destination="@id/CardFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/CardFragment"
