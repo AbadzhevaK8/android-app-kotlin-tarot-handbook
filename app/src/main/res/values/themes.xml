@@ -31,6 +31,7 @@
         <item name="android:statusBarColor">?attr/colorSecondaryContainer</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:actionBarStyle">@style/ActionBarText</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
 <!--        <item name="android:windowTranslucentStatus">true</item>-->
     </style>
 

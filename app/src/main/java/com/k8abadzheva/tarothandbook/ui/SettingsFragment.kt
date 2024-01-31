@@ -19,10 +19,10 @@ class SettingsFragment : Fragment() {
     private lateinit var languageSpinner: Spinner
     private lateinit var sharedPreferences: SharedPreferences
 
-    private fun showToast(message: String) {
-        val toast = Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT)
-        toast.show()
-    }
+//    private fun showToast(message: String) {
+//        val toast = Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT)
+//        toast.show()
+//    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
