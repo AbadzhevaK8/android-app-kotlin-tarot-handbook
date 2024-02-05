@@ -32,8 +32,9 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
-        supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        // TODO: for version 2.0
+//        setSupportActionBar(binding.toolbar)
+//        supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         val navController = supportFragmentManager.findFragmentById(R.id.fragmentContainerView)?.findNavController()
